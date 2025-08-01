@@ -1,0 +1,118 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.intro-page {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 100%;
+}
+
+/* HEADER */
+
+.header {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+  height: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerBG {
+  position: absolute;
+  background-color: #3960b4;
+  transition: opacity 0.6s ease;
+  z-index: 1;
+  opacity: 1;
+  width: 100%;
+  height: 9vh;
+}
+
+.header-different {
+  position: absolute;
+  background-color: #ebebeb;
+  transition: opacity 0.6s ease;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-options-holder {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.nav-option {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+.nav-text-color {
+  transition: 0.3s ease-in-out;
+}
+
+/* blog hero */
+.blog-hero{
+    position: relative;
+    height: 80vh;
+    background-image: url(Assets/Images/245A2346\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog-cover{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.247);
+    z-index: 1;
+}
+
+.text-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    z-index: 4;
+}
+
+.text-container span{
+    font-size: 4rem;
+    color: white;
+}
+
+.text-container p{
+    font-size: 1.3rem;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* blog container */
+.blog-container{
+    margin: 2rem;
+    background-color: red;
+    height: 100vh;
+    width: 10vw;
+}
